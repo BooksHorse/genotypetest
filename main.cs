@@ -2,10 +2,10 @@ using System;
 
 class Program {
   public static void Main (string[] args) {
-		var a = new Genotype("aa");
-		var b = new Genotype("AA");
-		var c = a+b;
-    Console.WriteLine (c.GetAllele());
+		var father = new Genotype("Ll");
+		var mother = new Genotype("Ll");
+		var parents = father+mother;
+    Console.WriteLine (string.Join(",",parents.Mix()));
   }
 }
 class Genotype {
@@ -30,8 +30,13 @@ class Generation {
 		First=f1.Alleles;
 		Second=f2.Alleles;
 	}
-	public char[] GetAllele() {
-		return (First+Second).ToCharArray();
+	public string[] Mix() {
+		var result = new string[4];
+		result[0] = $"{First[0]}{Second[0]}";
+		result[1] = $"{First[0]}{Second[1]}";
+		result[2] = $"{First[1]}{Second[0]}";
+		result[3] = $"{First[1]}{Second[1]}";
+		return result;
 	}
 	public override string ToString()
     {
