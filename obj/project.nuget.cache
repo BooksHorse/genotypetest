@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vi9f3ifu+gbql+oRyC1anDyrf3XoWOC+E+hJLJ3F5preemGMtvHgtn7Ci4Gc5UMGle78icMgiRD6J1nIxl6wGg==",
+  "dgSpecHash": "k+AqO1mtPN0IRLV5W6y1qeNSz9qQSbIV0z1mCjtdzT431FJa5xbn/nJoJo3ZW4umS+Re/Pb+mFWZDHCGbg+Dug==",
   "success": true,
-  "projectFilePath": "/home/runner/CSharp/main.csproj",
+  "projectFilePath": "/home/runner/genotypetest/main.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
